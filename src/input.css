@@ -2,9 +2,24 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  --color-brand-50: #fdf8f6;
+  --color-brand-100: #f2e8e5;
+  --color-brand-500: #8c5a47;
   --color-brand-600: #5C3D2E;
+  --color-brand-700: #422B21;
   --color-ink: #2C2C2C;
+  --color-ink-light: #666666;
+  --color-surface: #ffffff;
   --font-display: "Cormorant Garamond", system-ui, sans-serif;
   --font-body: "Source Sans 3", system-ui, sans-serif;
   --radius-card: 0.875rem;
+  --radius-pill: 9999px;
 }
+
+.section {
+  @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
+}
+
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-pill
+  px-5 py-2.5 text-sm font-semibold transition-colors; }
+.btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
