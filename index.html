@@ -6,25 +6,37 @@
     <title>Vintage Coffee</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body>
-    <a href="#main">Bỏ qua đến nội dung chính</a>
-    <header>
-        <nav aria-label="Điều hướng chính">
-            
+    <header id="site-header" class="sticky top-0 z-40 border-b border-spansparent bg-surface/80 backdrop-blur transition-all duration-200">
+        <nav aria-label="Main Navigation" class="mx-auto w-full max-w-6xl px-5 py-4 lg:py-4 flex items-center justify-between">
+            <a href="./index.html" class="flex items-center gap-2.5">
+                <span class="grid h-9 w-9 place-items-center rounded-lg -bg-brand-600 font-display text-lg font-extrabold text-while">O</span>
+            </a>
+            <!-- Menu desktop -->
+             <ul class="hidden items-center gap-8 text-sm font-medium lg:flex">
+                <li><a href="#" class="hover:text-brand-600">Trang chủ</a></li>
+                <li><a href="#" class="hover:text-brand-600">Thực đơn</a></li>
+                <li><a href="#" class="hover:text-brand-600">Đánh giá</a></li>
+                <li><a href="#" class="hover:text-brand-600">Sự kiện</a></li>
+                <li><a href="#" class="hover:text-brand-600">Liên hệ</a></li>
+             </ul>
         </nav>
     </header>
     <main id="main">
-        <section aria-labelledby="hero-title">
-            <h1 id="hero-title">…</h1>
+        <section class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28 grid items-center gap-14 lg:grid-cols-2 lg:gap-16" aria-labelledby="hero-title">
+            <div>
+                <p class="eyebrow">Tận hưởng vị ngon của cà phê theo tháng năm</p>
+                <h1 id="hero-title" class="mt-4 text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl">
+                    Cà phê của thời gian.<br />
+                    Đậm đà như ký ức.
+                </h1>
+            </div>
         </section>
-        <section aria-labelledby="tinh-nang-title">
-            <h2 id="tinh-nang-title">…</h2>
-            <ul> <li> <h3>…</h3> </li> </ul>
-        </section>
+        
     </main>
-    <footer> … </footer>
+    
 </body>
 </html>

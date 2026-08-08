@@ -2,24 +2,56 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-brand-50: #fdf8f6;
-  --color-brand-100: #f2e8e5;
-  --color-brand-500: #8c5a47;
-  --color-brand-600: #5C3D2E;
-  --color-brand-700: #422B21;
-  --color-ink: #2C2C2C;
-  --color-ink-light: #666666;
-  --color-surface: #ffffff;
-  --font-display: "Cormorant Garamond", system-ui, sans-serif;
-  --font-body: "Source Sans 3", system-ui, sans-serif;
+  /* Màu thương hiệu: nâu cà phê rang đậm - lấy ý tưởng từ màu hạt cà phê rang */
+  --color-brand-50: #f5efe6;
+  --color-brand-100: #e3d0b8;
+  --color-brand-500: #6f4527;
+  --color-brand-600: #5a3620;
+  --color-brand-700: #46291a;
+  --color-brand-900: #2e1a10;
+
+  /* Màu nhấn: vàng caramel/đồng cổ - cho điểm nhấn số liệu */
+  --color-accent-300: #d9a441;
+  --color-accent-400: #c68a2b;
+  --color-accent-500: #a8721f;
+
+  /* Màu chữ và nền */
+  --color-ink: #2b1c14;
+  --color-ink-invert: #f3e9dc;
+  --color-muted: #6b5a4a;
+  --color-muted-invert: #baa892;
+  --color-line: #e6d9c6;
+  --color-line-invert: #3d2c1e;
+  --color-surface: #fdf6ac;
+  --color-surface-alt: #f0e4d0;
+  --color-surface-dark: #201308;
+  --color-surface-dark-alt: #2e1c10;
+
+  /* Chữ: Playfair Display cho tiêu đề (phong cách vintage/serif),
+     Nunito Sans cho nội dung */
+  --font-display: "Playfair Display", system-ui, sans-serif;
+  --font-body: "Nunito Sans", system-ui, sans-serif;
   --radius-card: 0.875rem;
-  --radius-pill: 9999px;
+  --radius-pill: 999px;
 }
 
-.section {
-  @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-surface text-ink font-body antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+  }
 }
 
-.btn { @apply inline-flex items-center justify-center gap-2 rounded-pill
-  px-5 py-2.5 text-sm font-semibold transition-colors; }
-.btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
+@layer components {
+  .eyebrow {
+    @apply font-display text-xs font-semibold uppercase tracking-[0,18em] text-brand-600;
+  }
+}
