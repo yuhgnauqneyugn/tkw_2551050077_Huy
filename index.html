@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 <body>
     <div class="min-h-screen flex flex-col bg-[#f7e98e]">
@@ -21,6 +23,7 @@
                     <li><a href="#gioi-thieu" class="hover:text-brand-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-brand-600 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform">Giới thiệu</a></li>
                     <li><a href="#menu" class="hover:text-brand-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-brand-600 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform">Thực đơn</a></li>
                     <li><a href="#danh-gia" class="hover:text-brand-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-brand-600 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform">Đánh giá</a></li>
+                     <li><a href="#faq" class="hover:text-brand-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-brand-600 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform">Câu hỏi thường gặp</a></li>
                     <li><a href="#lien-he" class="hover:text-brand-600 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-brand-600 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform">Liên hệ</a></li>
                  </ul>
             </nav>
@@ -63,7 +66,7 @@
 
         <div class="flex items-start gap-8">
             <div class="flex flex-col items-start gap-3 shrink-0">
-                <h3 class="text-[#f0e6c8] text-lg font-semibold">35 năm kinh nghiệm pha phin truyền thống</h3>
+                <h3 class="text-[#f0e6c8] text-lg font-semibold">36 năm kinh nghiệm pha phin truyền thống</h3>
                 <img src="images/vintage-shop.jpg" alt="Quán cà phê" class="w-40 h-24 object-cover rounded-lg border-2 border-[#8b5e34]">
             </div>
             <p class="text-[#c9b896] text-sm leading-relaxed self-center">
@@ -162,8 +165,12 @@
                         <input id="cust-phone" name="cust-phone" type="tel" required pattern="^(0|\+84)[0-9]{9,10}$" class="w-full rounded-lg border-2 border-[#8b5e34] px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-[#8b5e34]">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium mb-1" for="cust-address">Địa chỉ nhà</label>
+                        <label class="block text-sm font-medium mb-1" for="cust-address">Địa chỉ</label>
                         <textarea id="cust-address" name="cust-address" required rows="2" class="w-full rounded-lg border-2 border-[#8b5e34] px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-[#8b5e34]"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1" for="cust-name">Ghi chú</label>
+                        <input id="cust-note" name="cust-note" type="text" class="w-full rounded-lg border-2 border-[#8b5e34] px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-[#8b5e34]">
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-1" for="cust-coupon">Mã giảm giá (nếu có)</label>
@@ -199,7 +206,7 @@
     <section id="faq" class="min-h-screen bg-[#dcd0b0] py-16 px-8 scroll-mt-20">
         <div class="mx-auto w-full max-w-3xl">
             <h2 class="text-3xl font-extrabold text-center mb-4 text-[#3d2b1c]">Câu hỏi thường gặp</h2>
-            <p class="text-center text-[#6b5842] mb-12">Một số thắc mắc phổ biến về Vintagroup</p>
+            <p class="text-center text-[#6b5842] mb-12">Một số thắc mắc phổ biến về Vintage & Vintagroup</p>
  
             <div class="flex flex-col gap-4">
                 <details class="group bg-[#fdf6e3] rounded-lg border-2 border-[#8b5e34] p-5" open>
@@ -208,11 +215,11 @@
                         <span class="text-[#8b5e34] transition-transform group-open:rotate-45">+</span>
                     </summary>
                     <p class="mt-3 text-sm text-[#5c4630] leading-relaxed">
-                        Vintagroup mở cửa từ 06:30 đến 22:30 tất cả các ngày trong tuần, kể cả cuối tuần và ngày lễ.
+                        Vintage mở cửa từ 06:30 đến 22:30 tất cả các ngày trong tuần, kể cả cuối tuần và ngày lễ.
                     </p>
                 </details>
  
-                <details class="group bg-[#fdf6e3] rounded-lg border-2 border-[#8b5e34] p-5">
+                <details class="group bg-[#fdf6e3] rounded-lg border-2 border-[#8b5e34] p-5" open>
                     <summary class="cursor-pointer list-none flex items-center justify-between font-semibold text-[#3d2b1c]">
                         Có hỗ trợ giao hàng tận nơi không?
                         <span class="text-[#8b5e34] transition-transform group-open:rotate-45">+</span>
@@ -222,17 +229,7 @@
                     </p>
                 </details>
  
-                <details class="group bg-[#fdf6e3] rounded-lg border-2 border-[#8b5e34] p-5">
-                    <summary class="cursor-pointer list-none flex items-center justify-between font-semibold text-[#3d2b1c]">
-                        Có thể đặt bàn trước không?
-                        <span class="text-[#8b5e34] transition-transform group-open:rotate-45">+</span>
-                    </summary>
-                    <p class="mt-3 text-sm text-[#5c4630] leading-relaxed">
-                        Được, bạn có thể gửi yêu cầu đặt bàn qua form ở phần Liên hệ bên dưới, đội ngũ sẽ phản hồi trong vòng 30 phút.
-                    </p>
-                </details>
- 
-                <details class="group bg-[#fdf6e3] rounded-lg border-2 border-[#8b5e34] p-5">
+                <details class="group bg-[#fdf6e3] rounded-lg border-2 border-[#8b5e34] p-5" open>
                     <summary class="cursor-pointer list-none flex items-center justify-between font-semibold text-[#3d2b1c]">
                         Mã giảm giá áp dụng như thế nào?
                         <span class="text-[#8b5e34] transition-transform group-open:rotate-45">+</span>
@@ -249,12 +246,12 @@
     <section id="lien-he" class="min-h-screen bg-[#f5f0e6] py-16 px-8 scroll-mt-20">
         <div class="mx-auto w-full max-w-6xl">
             <h2 class="text-3xl font-extrabold text-center mb-4 text-[#3d2b1c]">Liên Hệ Với Vintagroup</h2>
-            <p class="text-center text-[#6b5842] mb-12">Bạn có câu hỏi, góp ý hoặc muốn đặt bàn? Hãy gửi lời nhắn cho chúng tôi.</p>
+            <p class="text-center text-[#6b5842] mb-12">Sự góp ý của quý khách luôn là động lực để chúng tôi cải thiện mỗi ngày</p>
  
             <div class="grid gap-8 lg:grid-cols-2">
                 <!-- Form gửi lời nhắn -->
                 <div class="bg-white rounded-xl border-2 border-[#8b5e34] p-6">
-                    <h3 class="text-xl font-bold mb-5 text-[#3d2b1c]">Gửi lời nhắn</h3>
+                    <h3 class="text-xl font-bold mb-5 text-[#3d2b1c]">Hãy để lại thông tin liên hệ của quý khách</h3>
                     <form class="flex flex-col gap-4">
                         <div>
                             <label class="block text-sm font-medium mb-1 text-[#3d2b1c]" for="contact-name">Họ và tên</label>
@@ -269,12 +266,8 @@
                             <input id="contact-phone" type="tel" placeholder="09xxxxxxxx" class="w-full rounded-lg border-2 border-[#c9b896] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#8b5e34]">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium mb-1 text-[#3d2b1c]" for="contact-subject">Chủ đề</label>
-                            <input id="contact-subject" type="text" placeholder="Bạn muốn trao đổi về vấn đề gì?" class="w-full rounded-lg border-2 border-[#c9b896] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#8b5e34]">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-1 text-[#3d2b1c]" for="contact-message">Nội dung</label>
-                            <textarea id="contact-message" rows="4" placeholder="Nhập nội dung tin nhắn..." class="w-full rounded-lg border-2 border-[#c9b896] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#8b5e34]"></textarea>
+                            <label class="block text-sm font-medium mb-1 text-[#3d2b1c]" for="contact-message">Những góp ý hoặc thắc mắc của quý khách</label>
+                            <textarea id="contact-message" rows="4" placeholder="Nhập nội dung..." class="w-full rounded-lg border-2 border-[#c9b896] px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#8b5e34]"></textarea>
                         </div>
                         <button type="submit" class="mt-2 rounded-lg bg-[#8b5e34] text-[#f0e6c8] font-semibold py-3 hover:bg-[#6f4a29] transition-colors">Gửi liên hệ</button>
                     </form>
@@ -282,56 +275,55 @@
  
                 <!-- Thông tin quán -->
                 <div class="bg-white rounded-xl border-2 border-[#8b5e34] p-6">
-                    <h3 class="text-xl font-bold mb-5 text-[#3d2b1c]">Thông tin</h3>
+                    <h3 class="text-xl font-bold mb-5 text-[#3d2b1c]">Về chúng tôi</h3>
  
                     <div class="flex flex-col gap-3">
                         <div class="flex items-start gap-3 bg-[#f5f0e6] rounded-lg p-4">
-                            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8]">📍</span>
+                            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8]"><iconify-icon icon="logos:google-maps" width="24" height="24"></iconify-icon></span>
                             <div>
                                 <p class="font-semibold text-[#3d2b1c]">Địa chỉ</p>
-                                <p class="text-sm text-[#5c4630]">123 Đường XYZ, Quận X, TP. ABC</p>
+                                <p class="text-sm text-[#5c4630]">Số 1 Đường X, Quận Y, Thành Phố Z</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 bg-[#f5f0e6] rounded-lg p-4">
-                            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8]">📞</span>
+                            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8]"><iconify-icon icon="ic:baseline-phone" width="24" height="24" style="color: #4285F4;"></iconify-icon></span>
                             <div>
                                 <p class="font-semibold text-[#3d2b1c]">Hotline</p>
-                                <p class="text-sm text-[#5c4630]">1234 5678</p>
+                                <p class="text-sm text-[#5c4630]">8888 8888</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 bg-[#f5f0e6] rounded-lg p-4">
-                            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8]">✉️</span>
+                            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8]"><iconify-icon icon="ic:baseline-email" width="24" height="24" style="color: #ea4335;"></iconify-icon></span>
                             <div>
                                 <p class="font-semibold text-[#3d2b1c]">Email</p>
                                 <p class="text-sm text-[#5c4630]">support@vintagroup.com.vn</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 bg-[#f5f0e6] rounded-lg p-4">
-                            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8]">🕒</span>
+                            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8]"><iconify-icon icon="ic:baseline-access-time" width="24"></iconify-icon></span>
                             <div>
                                 <p class="font-semibold text-[#3d2b1c]">Giờ mở cửa</p>
-                                <p class="text-sm text-[#5c4630]">Thứ 2 - Chủ Nhật: 06:30 - 22:30</p>
+                                <p class="text-sm text-[#5c4630]">T2 - CN: 06:30 - 22:30</p>
                             </div>
                         </div>
                     </div>
  
                     <div class="mt-4">
-                        <h4 class="font-semibold text-[#3d2b1c] mb-2">Theo dõi Vintagroup</h4>
+                        <h4 class="font-semibold text-[#3d2b1c] mb-2">Theo dõi Vintagroup tại</h4>
                         <div class="flex gap-3">
-                            <a href="#" aria-label="Facebook" class="grid h-9 w-9 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8] hover:bg-[#6f4a29] transition-colors">f</a>
-                            <a href="#" aria-label="Instagram" class="grid h-9 w-9 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8] hover:bg-[#6f4a29] transition-colors">◎</a>
-                            <a href="#" aria-label="TikTok" class="grid h-9 w-9 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8] hover:bg-[#6f4a29] transition-colors">♪</a>
+                            <a href="#" aria-label="Facebook" class="grid h-9 w-9 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8] hover:bg-[#6f4a29] transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" aria-label="TikTok" class="grid h-9 w-9 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8] hover:bg-[#6f4a29] transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#" aria-label="X" class="grid h-9 w-9 place-items-center rounded-full bg-[#8b5e34] text-[#f0e6c8] hover:bg-[#6f4a29] transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
+            <!-- Bản quyền -->
+    <div class="bg-[#f5f0e6] py-6 px-8 text-center text-xs text-[#8b7355]">
+        &copy; 1990 Vintagroup.
+    </div>
         </div>
     </section>
- 
-    <!-- Bản quyền -->
-    <div class="bg-[#f5f0e6] py-6 px-8 text-center text-xs text-[#8b7355]">
-        © 2026 Vintagroup.
-    </div>
 
      <script>
         (function () {
